@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register form IIMB</title>
+</head>
+<body>
+    <header>
+        <img src="https://www.iimb.ac.in/sites/default/files/inline-images/IIMB-Logo.png" alt="IIMB LOGO" height="40px">
+    <H1>IIMB FEST-2026</H1>
+    <p>welcome to the best fets in banglore.hope you have a great time.</p>
+    <nav>
+        <a href="./index.html">click here to go back to home page</a>
+        
+    </nav>
+    </header>
+    <!--we use header tag to show that this is the starting or the main thing-->
+
+    <main>
+    
+     <section>
+         <h2>Register for the fest</h2>
+    <form action="/register">
+        <label for="name">enter your name</label>
+        <input type="text" name="name" id="name" required minlength="2", maxlength="12">
+        <!--here required feature is basically that you have to write your name otherwise you cannot submit-->
+        <br><br>
+        <label for="email">enter your email</label>
+        <input type="email" name="email" id="email" placeholder="you@gmail.com">
+        <br><br>
+        <label for="t_shirt_size">select your tshirt size</label>
+        <select name="t_shirt_size" id="t_shirt_size">
+           <!--select for dropdown-->
+            <option value="">--please select a option</option>
+            <option value="38">38</option>
+            <option value="39">39</option>
+            <option value="40">40</option>
+            <option value="41">41</option>
+           </select>
+           <br><br>
+           <label for="checkbox">doo you agree with all conditions</label>
+           <input type="checkbox" name="tnc" id="checkbox1" required>
+           <br><br>
+           <label for="alumni">alumni:</label>
+           <input type="radio" name="attendee type" id="alumni" value="alumni">
+           <label for="student">student:</label>
+           <input type="radio" name="attendee type" id="student" value="student">
+           <!--so attendee type is when only can select 1 option-->
+           <br><br>
+        <button type="Submit">Register</button>
+
+    </form>
+    <hr>
+     </section>
+    
+    
+    </main>
+    
+</body>
+</html> 
